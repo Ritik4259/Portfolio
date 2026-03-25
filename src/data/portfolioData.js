@@ -4,7 +4,10 @@ export const portfolioData = {
     { label: "Skills", href: "#skills" },
     { label: "Projects", href: "#projects" },
     { label: "Journey", href: "#journey" },
+    { label: "Resume", href: "#resume" },
+    { label: "Certs", href: "#certificates" },
     { label: "Education", href: "#education" },
+    { label: "Platforms", href: "#platforms" },
     { label: "Contact", href: "#contact" },
   ],
   hero: {
@@ -139,6 +142,34 @@ export const portfolioData = {
       type: "Project Work",
     },
   ],
+  resume: {
+    fileName: "Ritik CV (4).pdf",
+    href: "/Ritik%20CV%20(4).pdf",
+    description:
+      "Download or preview my latest resume directly from the portfolio for a faster recruiter workflow.",
+  },
+  certificates: [
+    {
+      title: "Supervised Machine Learning: Classification",
+      issuer: "Coursera",
+      date: "Feb 2026",
+    },
+    {
+      title: "Advanced Learning Algorithms",
+      issuer: "Coursera",
+      date: "Jan 2026",
+    },
+    {
+      title: "Supervised Machine Learning: Regression",
+      issuer: "Coursera",
+      date: "Jan 2026",
+    },
+    {
+      title: "Data Analysis with Python",
+      issuer: "Coursera",
+      date: "Jan 2026",
+    },
+  ],
   education: [
     {
       institution: "Lovely Professional University",
@@ -172,6 +203,11 @@ export const portfolioData = {
     socials: [
       { label: "GitHub", href: "https://github.com/Ritik4259" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/ritikbhardwaj535/" },
+    ],
+    codingPlatforms: [
+      { label: "LeetCode", href: "https://leetcode.com/u/ritik_1111/" },
+      { label: "GeeksforGeeks", href: "https://www.geeksforgeeks.org/profile/ritik_1111?tab=activity" },
+      { label: "Codolio", href: "https://codolio.com/profile/ritik__111" },
     ],
   },
 };

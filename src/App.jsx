@@ -14,8 +14,11 @@ import SkillsSection from "./components/SkillsSection";
 const AboutSection = lazy(() => import("./components/AboutSection"));
 const ProjectsSection = lazy(() => import("./components/ProjectsSection"));
 const TimelineSection = lazy(() => import("./components/TimelineSection"));
+const ResumeSection = lazy(() => import("./components/ResumeSection"));
+const CertificatesSection = lazy(() => import("./components/CertificatesSection"));
 const EducationSection = lazy(() => import("./components/EducationSection"));
 const TerminalSection = lazy(() => import("./components/TerminalSection"));
+const CodingPlatformsSection = lazy(() => import("./components/CodingPlatformsSection"));
 
 function Loader() {
   return (
@@ -146,8 +149,11 @@ function App() {
           <SkillsSection skillGroups={portfolioData.skills} />
           <ProjectsSection projects={portfolioData.projects} />
           <TimelineSection items={portfolioData.timeline} />
+          <ResumeSection resume={portfolioData.resume} />
+          <CertificatesSection items={portfolioData.certificates} />
           <EducationSection items={portfolioData.education} />
           <TerminalSection lines={terminalLines} />
+          <CodingPlatformsSection items={portfolioData.contact.codingPlatforms} />
           <ContactSection contact={portfolioData.contact} />
         </Suspense>
       </main>

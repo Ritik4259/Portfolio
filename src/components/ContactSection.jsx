@@ -8,7 +8,7 @@ function ContactSection({ contact }) {
     <section id="contact" className="section-shell">
       <SectionHeading
         eyebrow="Contact"
-        title="Let’s build something meaningful, ambitious, and beautifully engineered."
+        title="Let's build something meaningful, ambitious, and beautifully engineered."
         description={contact.intro}
       />
       <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
