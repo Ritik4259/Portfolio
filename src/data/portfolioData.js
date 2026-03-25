@@ -143,7 +143,6 @@ export const portfolioData = {
     },
   ],
   resume: {
-    fileName: "Ritik CV (4).pdf",
     href: "/Ritik%20CV%20(4).pdf",
     description:
       "Download or preview my latest resume directly from the portfolio for a faster recruiter workflow.",
@@ -153,21 +152,25 @@ export const portfolioData = {
       title: "Supervised Machine Learning: Classification",
       issuer: "Coursera",
       date: "Feb 2026",
+      href: "https://coursera.org/share/d0f6a535c4ad60d9ace8bafd564d267c",
     },
     {
       title: "Advanced Learning Algorithms",
       issuer: "Coursera",
       date: "Jan 2026",
+      href: "https://coursera.org/share/d7b16772ec8e3011601df1e0ca599ba7",
     },
     {
       title: "Supervised Machine Learning: Regression",
       issuer: "Coursera",
       date: "Jan 2026",
+      href: "https://coursera.org/share/8ea7594e3c0d214499a00bcf1d17b5dc",
     },
     {
       title: "Data Analysis with Python",
       issuer: "Coursera",
       date: "Jan 2026",
+      href: "https://coursera.org/share/bce77ac96c81a99bd72e39ee4ac597b0",
     },
   ],
   education: [

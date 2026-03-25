@@ -24,10 +24,10 @@ function ResumeSection({ resume }) {
               <FileText className="h-6 w-6" />
             </div>
             <div>
-              <p className="text-theme-muted text-sm uppercase tracking-[0.25em]">Resume File</p>
-              <h3 className="text-theme mt-2 text-2xl font-semibold">{resume.fileName}</h3>
+              <p className="text-theme-muted text-sm uppercase tracking-[0.25em]">Resume</p>
+              <p className="text-theme mt-2 text-2xl font-semibold">Latest professional snapshot</p>
               <p className="text-theme-soft mt-3 text-sm leading-7">
-                Download my latest resume or open it directly in the browser for a full view of my education, projects, training, and achievements.
+                Download my latest resume or open it directly in the browser for a full view of my education, projects, training, certifications, and achievements.
               </p>
             </div>
           </div>
