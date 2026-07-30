@@ -22,7 +22,7 @@ function EducationSection({ items }) {
           <motion.article
             key={`${item.institution}-${item.period}`}
             variants={fadeInUp}
-            className="glass-panel border-theme rounded-[30px] p-6"
+            className="glass-panel border-theme panel-interactive rounded-[30px] p-6"
           >
             <div className="flex items-start justify-between gap-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-300/10 text-sky-200">

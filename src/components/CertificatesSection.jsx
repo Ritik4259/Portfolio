@@ -9,7 +9,7 @@ function CertificatesSection({ items }) {
       <SectionHeading
         eyebrow="Certificates"
         title="Focused learning milestones that strengthened my machine learning foundation."
-        description="Selected certifications and structured learning from my CV, now linked directly for quick verification."
+        description="Selected Coursera certifications from my CV. Each card links to its verification page."
       />
       <motion.div
         variants={sectionStagger}
@@ -25,7 +25,7 @@ function CertificatesSection({ items }) {
             target="_blank"
             rel="noreferrer"
             variants={fadeInUp}
-            className="glass-panel border-theme group rounded-[30px] p-6 transition hover:-translate-y-1"
+            className="glass-panel border-theme panel-interactive group rounded-[30px] p-6"
           >
             <div className="flex items-start justify-between gap-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-300/10 text-sky-200">

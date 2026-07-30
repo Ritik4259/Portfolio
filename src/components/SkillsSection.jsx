@@ -7,8 +7,8 @@ function SkillsSection({ skillGroups }) {
     <section id="skills" className="section-shell">
       <SectionHeading
         eyebrow="Skills"
-        title="A toolkit shaped by machine learning depth and modern product engineering."
-        description="From model experimentation to polished web interfaces, these are the tools I rely on to translate ideas into working systems."
+        title="Tools I use to learn, build, and experiment."
+        description="A focused toolkit across programming, machine learning, and data work."
       />
       <motion.div
         variants={sectionStagger}
@@ -21,7 +21,7 @@ function SkillsSection({ skillGroups }) {
           <motion.div
             key={group.title}
             variants={fadeInUp}
-            className="glass-panel border-theme rounded-[30px] p-6"
+            className="glass-panel border-theme panel-interactive rounded-[30px] p-6"
           >
             <h3 className="text-theme font-display text-2xl font-semibold">{group.title}</h3>
             <div className="mt-6 space-y-5">

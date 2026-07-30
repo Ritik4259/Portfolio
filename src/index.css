@@ -7,9 +7,9 @@
 :root {
   color-scheme: dark;
   --bg: #070b14;
-  --bg-elevated: rgba(15, 23, 42, 0.68);
-  --surface: rgba(255, 255, 255, 0.08);
-  --surface-strong: rgba(255, 255, 255, 0.12);
+  --bg-elevated: rgba(10, 16, 31, 0.82);
+  --surface: rgba(15, 23, 42, 0.58);
+  --surface-strong: rgba(30, 41, 59, 0.72);
   --text: #e5f0ff;
   --muted: #94a3b8;
   --muted-strong: #cbd5e1;
@@ -38,6 +38,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
 }
 
 body {
@@ -50,7 +51,8 @@ body {
     var(--bg);
   color: var(--text);
   font-family: "Inter", system-ui, sans-serif;
-  overflow-x: hidden;
+  overflow-x: clip;
+  line-height: 1.5;
 }
 
 * {
@@ -72,6 +74,19 @@ textarea {
   font: inherit;
 }
 
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 #root {
   min-height: 100vh;
 }
@@ -81,11 +96,11 @@ textarea {
   border: 1px solid var(--panel-border);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  box-shadow: 0 25px 80px rgba(2, 6, 23, 0.35);
+  box-shadow: 0 18px 56px rgba(2, 6, 23, 0.22);
 }
 
 .section-shell {
-  @apply mx-auto w-full max-w-7xl px-6 py-24 md:px-10 lg:px-12;
+  @apply mx-auto w-full max-w-7xl px-5 py-20 sm:px-6 md:px-10 md:py-28 lg:px-12;
 }
 
 .section-label {
@@ -140,4 +155,25 @@ textarea {
 
 .border-theme {
   border-color: var(--panel-border);
+}
+
+.panel-interactive {
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1), border-color 280ms ease, background-color 280ms ease, box-shadow 280ms ease;
+}
+
+.panel-interactive:hover {
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--panel-border));
+  box-shadow: 0 22px 60px rgba(2, 6, 23, 0.3);
+  transform: translateY(-4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

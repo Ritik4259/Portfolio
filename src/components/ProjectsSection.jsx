@@ -89,21 +89,21 @@ function ProjectsSection({ projects }) {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.15 }}
-        className="grid gap-6 lg:grid-cols-2"
+        className="grid gap-5 lg:grid-cols-2"
       >
         {projects.map((project, index) => (
           <motion.article
             key={project.title}
             variants={fadeInUp}
-            whileHover={{ y: -8, rotateX: 3, rotateY: index % 2 === 0 ? 3 : -3 }}
-            transition={{ type: "spring", stiffness: 260, damping: 18 }}
-            className="group glass-panel border-theme relative overflow-hidden rounded-[32px] p-7"
+            whileHover={{ y: -6 }}
+            transition={{ type: "spring", stiffness: 320, damping: 24 }}
+            className="group glass-panel border-theme relative overflow-hidden rounded-[32px] p-6 md:p-7"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-sky-300/10 via-transparent to-emerald-300/10 opacity-0 transition duration-500 group-hover:opacity-100" />
             <div className="relative">
               <div className="mb-6 flex items-center justify-between">
-                <span className="rounded-full border border-sky-300/15 bg-sky-300/10 px-3 py-1 text-xs uppercase tracking-[0.25em] text-sky-100">
-                  Case Study {index + 1}
+                <span className="rounded-full border border-sky-300/15 bg-sky-300/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.2em] text-sky-100">
+                  Featured · {String(index + 1).padStart(2, "0")}
                 </span>
                 <div className="text-theme-muted flex gap-3">
                   <a href={project.github} target="_blank" rel="noreferrer">
@@ -117,7 +117,7 @@ function ProjectsSection({ projects }) {
                 </div>
               </div>
               <h3 className="text-theme font-display text-2xl font-semibold">{project.title}</h3>
-              <p className="text-theme-soft mt-4 text-sm leading-7">{project.description}</p>
+              <p className="text-theme-soft mt-4 max-w-xl text-sm leading-7">{project.description}</p>
               <div className="mt-6 flex flex-wrap gap-2">
                 {project.stack.map((item) => (
                   <span
@@ -131,7 +131,7 @@ function ProjectsSection({ projects }) {
               <button
                 type="button"
                 onClick={() => setActiveProject(project)}
-                className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-sky-200 transition group-hover:translate-x-1"
+                className="mt-7 inline-flex items-center gap-2 text-sm font-medium text-sky-200 transition group-hover:translate-x-1"
               >
                 Open project details
                 <ArrowUpRight className="h-4 w-4" />

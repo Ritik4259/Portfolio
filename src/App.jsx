@@ -61,19 +61,19 @@ function StatsStrip() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className="glass-panel border-theme relative overflow-hidden rounded-[32px] px-6 py-8 md:px-8"
+        className="glass-panel border-theme relative overflow-hidden rounded-[32px] p-3 md:p-4"
       >
         <div className="absolute inset-0 bg-gradient-to-r from-sky-400/10 via-transparent to-emerald-300/10" />
-        <div className="grid gap-5 md:grid-cols-3">
-          {stats.map((item) => (
+        <div className="grid divide-y divide-white/10 md:grid-cols-3 md:divide-x md:divide-y-0">
+          {stats.map((item, index) => (
             <motion.div
               key={item.label}
               variants={fadeInUp}
-              className="surface-soft border-theme rounded-3xl border p-6"
+              className={`relative px-5 py-6 md:px-7 ${index === 0 ? "" : ""}`}
             >
-              <p className="text-theme text-4xl font-semibold">{item.value}</p>
-              <p className="text-theme-soft mt-2 text-sm">{item.label}</p>
-              <p className="text-theme-muted mt-3 text-sm">{item.description}</p>
+              <p className="text-theme font-display text-3xl font-semibold tracking-tight md:text-4xl">{item.value}</p>
+              <p className="text-theme-soft mt-2 text-sm font-medium">{item.label}</p>
+              <p className="text-theme-muted mt-2 text-sm leading-6">{item.description}</p>
             </motion.div>
           ))}
         </div>
@@ -87,23 +87,23 @@ function ExpertiseMarquee() {
     () => [
       "Machine Learning",
       "Deep Learning",
-      "Computer Vision",
-      "React Interfaces",
-      "Python Systems",
-      "MERN Development",
-      "Data Storytelling",
-      "Model Deployment",
+      "Natural Language Processing",
+      "Python",
+      "Data Structures & Algorithms",
+      "n8n Automation",
+      "Scikit-learn",
+      "Problem Solving",
     ],
     [],
   );
 
   return (
-    <section className="overflow-hidden py-6">
-      <div className="flex min-w-max animate-marquee gap-4 whitespace-nowrap">
+    <section aria-label="Areas of focus" className="overflow-hidden py-5">
+      <div className="flex min-w-max animate-marquee gap-3 whitespace-nowrap">
         {[...items, ...items].map((item, index) => (
           <div
             key={`${item}-${index}`}
-            className="surface-soft border-theme text-theme-soft rounded-full border px-5 py-2 text-sm"
+            className="surface-soft border-theme text-theme-soft rounded-full border px-4 py-2 text-sm"
           >
             {item}
           </div>
