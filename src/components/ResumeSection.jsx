@@ -8,7 +8,7 @@ function ResumeSection({ resume }) {
     <section id="resume" className="section-shell pt-0">
       <SectionHeading
         eyebrow="Resume"
-        title="A quick download for recruiters who want the full snapshot."
+        title="My current CV, available to preview or download."
         description={resume.description}
       />
       <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
@@ -25,9 +25,9 @@ function ResumeSection({ resume }) {
             </div>
             <div>
               <p className="text-theme-muted text-sm uppercase tracking-[0.25em]">Resume</p>
-              <p className="text-theme mt-2 text-2xl font-semibold">Latest professional snapshot</p>
+              <p className="text-theme mt-2 text-2xl font-semibold">Resume</p>
               <p className="text-theme-soft mt-3 text-sm leading-7">
-                Download my latest resume or open it directly in the browser for a full view of my education, projects, training, certifications, and achievements.
+                Download the current CV or open it directly in the browser to view my education, projects, training, certifications, and achievements.
               </p>
             </div>
           </div>

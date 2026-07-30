@@ -81,8 +81,8 @@ function ProjectsSection({ projects }) {
     <section id="projects" className="section-shell">
       <SectionHeading
         eyebrow="Projects"
-        title="Interactive project stories designed to catch attention and prove technical range."
-        description="This section carries the strongest weight in the portfolio, so each card is built to feel tactile, animated, and easy to explore."
+        title="Recent GitHub projects in machine learning, NLP, and deep learning."
+        description="A selected set of four repositories that reflect my current learning and project work."
       />
       <motion.div
         variants={sectionStagger}

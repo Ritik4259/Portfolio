@@ -14,12 +14,12 @@ export const portfolioData = {
     name: "Ritik Bhardwaj",
     tagline: "B.Tech CSE (AI & ML) Student",
     rotatingTitles: [
-      "Aspiring Machine Learning Engineer",
-      "Building Human-Centered AI Experiences",
-      "Designing Intelligent Full-Stack Products",
+      "AI & Machine Learning Student",
+      "Machine Learning Project Builder",
+      "Exploring NLP and Deep Learning",
     ],
     description:
-      "I blend machine learning curiosity with product-focused engineering to build clean, high-impact experiences that feel fast, thoughtful, and future-ready.",
+      "Computer Science student specialising in AI and Machine Learning, building hands-on projects to deepen my understanding of data, models, and intelligent systems.",
     primaryCta: { label: "View Projects", href: "#projects" },
     secondaryCta: { label: "Contact Me", href: "#contact" },
     focusAreas: [
@@ -27,30 +27,29 @@ export const portfolioData = {
       "Deep Learning",
       "Data Analysis",
       "Predictive Modeling",
-      "Computer Vision",
       "Problem Solving",
     ],
   },
   about: {
     intro:
-      "I'm a Computer Science student specializing in AI & Machine Learning, driven by the idea that useful intelligence should feel seamless, intuitive, and deeply practical.",
+      "I'm a Computer Science student specialising in AI and Machine Learning, with a focus on learning by building practical machine learning and NLP projects.",
     story:
-      "My favorite work lives at the intersection of mathematical thinking, rapid experimentation, and polished user experiences. I enjoy moving from model ideas to complete products that recruiters and users can actually explore.",
+      "My work centres on understanding machine learning from the ground up: preparing data, experimenting with models, evaluating results, and exploring the ideas behind modern AI systems.",
     highlights: [
       {
-        title: "Curiosity-Led Learning",
+        title: "Learning by Building",
         description:
-          "Constantly exploring model behavior, training workflows, and product design patterns to sharpen both theory and execution.",
+          "Using focused projects in regression, classification, NLP, and neural networks to turn coursework into practical experience.",
       },
       {
-        title: "Problem-Solving Mindset",
+        title: "Machine Learning Foundations",
         description:
-          "Breaking ambiguous problems into measurable systems, then iterating with a bias for clarity, experimentation, and impact.",
+          "Building familiarity with data preprocessing, feature engineering, model evaluation, optimisation, and clustering.",
       },
       {
-        title: "Built for Momentum",
+        title: "Continuous Exploration",
         description:
-          "I value consistent progress, strong fundamentals, and shipping experiences that feel polished from code to interaction.",
+          "Continuing to explore deep learning and language-focused machine learning through independent projects and coursework.",
       },
     ],
   },
@@ -58,62 +57,62 @@ export const portfolioData = {
     {
       title: "Programming",
       items: [
-        { name: "Python", level: 91 },
-        { name: "C++", level: 82 },
-        { name: "JavaScript", level: 84 },
-        { name: "SQL", level: 76 },
+        { name: "Python", level: 85 },
+        { name: "C++", level: 75 },
+        { name: "JavaScript", level: 70 },
+        { name: "SQL", level: 70 },
       ],
     },
     {
       title: "ML / AI",
       items: [
-        { name: "TensorFlow", level: 80 },
-        { name: "Scikit-learn", level: 88 },
-        { name: "Pandas / NumPy", level: 90 },
-        { name: "Computer Vision", level: 74 },
+        { name: "Scikit-learn", level: 80 },
+        { name: "Pandas / NumPy", level: 80 },
+        { name: "NLP", level: 75 },
+        { name: "Deep Learning", level: 70 },
       ],
     },
   ],
   projects: [
     {
-      title: "Car Price Prediction",
+      title: "Chat Intent Discovery with NLP",
       description:
-        "A machine learning project focused on estimating car prices from input features to support faster and more informed pricing decisions.",
-      stack: ["Python", "Machine Learning", "Pandas", "Scikit-learn"],
-      github: "https://github.com/Ritik4259/Car-Price-Prediction",
+        "An unsupervised NLP project that discovers hidden intents in customer conversations through semantic embeddings and clustering.",
+      stack: ["Python", "NLP", "Sentence-BERT", "HDBSCAN"],
+      github: "https://github.com/Ritik4259/Chat-intent-detection-using-NLP-and-clustering-same-using-Unsupervised-ML",
       demo: "",
       detail:
-        "Built around a supervised learning workflow with data preprocessing, feature handling, and model evaluation to predict vehicle prices from structured inputs.",
+        "Compares TF-IDF, Word2Vec, GloVe, and Sentence-BERT representations with K-Means, DBSCAN, and HDBSCAN. The workflow includes text cleaning, tokenisation, lemmatisation, cluster evaluation, PCA, and t-SNE visualisation.",
+    },
+    {
+      title: "Neural Network From Scratch",
+      description:
+        "A modular neural-network implementation built with Python and NumPy, without TensorFlow or PyTorch.",
+      stack: ["Python", "NumPy", "Backpropagation", "Optimisation"],
+      github: "https://github.com/Ritik4259/Neural-Network-from-scratch",
+      demo: "",
+      detail:
+        "Implements dense layers, forward and backward propagation, ReLU and Softmax, cross-entropy loss, dropout, L1/L2 regularisation, and optimisers including SGD, AdaGrad, RMSProp, and Adam.",
+    },
+    {
+      title: "AI Automation Workflows",
+      description:
+        "A collection of AI-powered n8n workflows for automation, productivity, document intelligence, and knowledge retrieval.",
+      stack: ["n8n", "LLMs", "RAG", "MCP"],
+      github: "https://github.com/Ritik4259/n8n-workflows",
+      demo: "",
+      detail:
+        "Includes AI agents for email, research, scheduling, and messaging; RAG workflows for PDF ingestion and knowledge assistants; and integrations with Google Workspace, Telegram, Pinecone, Slack, Notion, and Spotify.",
     },
     {
       title: "Fake Social Media Account Detection",
       description:
-        "A classification project aimed at identifying fake social media accounts using behavioral and profile-based signals.",
-      stack: ["Python", "Classification", "Data Analysis", "Scikit-learn"],
-      github: "https://github.com/Ritik4259/INT395---Fake-Social-Media-Account-Detection",
+        "A machine learning classification project focused on detecting fake social-media accounts.",
+      stack: ["Python", "Classification", "Machine Learning", "Data Analysis"],
+      github: "https://github.com/Ritik4259/Fake-Social-Media-Account-Detection",
       demo: "",
       detail:
-        "Focused on detecting suspicious account patterns by preparing structured data, training classification models, and evaluating predictive performance.",
-    },
-    {
-      title: "Diabetes Prediction",
-      description:
-        "A healthcare-oriented prediction model for estimating diabetes risk from medical input features.",
-      stack: ["Python", "Healthcare ML", "Pandas", "Scikit-learn"],
-      github: "https://github.com/Ritik4259/Diabetes-Prediction",
-      demo: "",
-      detail:
-        "Designed to demonstrate practical machine learning in a healthcare context, with a clean prediction pipeline and interpretable structured inputs.",
-    },
-    {
-      title: "Valuefy Assessment",
-      description:
-        "A technical assessment project showcasing problem solving, implementation quality, and structured engineering thinking.",
-      stack: ["JavaScript", "Problem Solving", "Frontend", "Assessment Project"],
-      github: "https://github.com/Ritik4259/Valuefy-assessment",
-      demo: "",
-      detail:
-        "Built as an assessment submission with emphasis on clarity, execution, and translating requirements into a working technical solution.",
+        "A repository showcasing an applied classification use case for identifying potentially fake social-media accounts from account-related data.",
     },
   ],
   timeline: [
@@ -137,40 +136,34 @@ export const portfolioData = {
     },
     {
       year: "2024",
-      title: "Full-Stack + AI Portfolio Projects",
-      subtitle: "Started building end-to-end products blending intelligence, design, and deployment readiness",
-      type: "Project Work",
+      title: "Programming Foundations",
+      subtitle: "Strengthened core programming skills and began building a foundation in data structures, algorithms, and problem solving.",
+      type: "Learning",
     },
   ],
   resume: {
-    href: "/Ritik%20CV%20(4).pdf",
+    href: "/Ritik%20Spec%20CV.pdf",
     description:
-      "Download or preview my latest resume directly from the portfolio for a faster recruiter workflow.",
+      "Download or preview my current CV.",
   },
   certificates: [
     {
-      title: "Supervised Machine Learning: Classification",
+      title: "Improving Deep Neural Networks",
       issuer: "Coursera",
-      date: "Feb 2026",
-      href: "https://coursera.org/share/d0f6a535c4ad60d9ace8bafd564d267c",
+      date: "May 2026",
+      href: "https://coursera.org/share/9fe1d4c2d969adaebe04a27e427753e3",
     },
     {
-      title: "Advanced Learning Algorithms",
+      title: "Neural Networks and Deep Learning",
       issuer: "Coursera",
-      date: "Jan 2026",
-      href: "https://coursera.org/share/d7b16772ec8e3011601df1e0ca599ba7",
+      date: "Apr 2026",
+      href: "https://coursera.org/share/b48b63486aef436526fc9cc3cf111b80",
     },
     {
-      title: "Supervised Machine Learning: Regression",
+      title: "Machine Learning with Python",
       issuer: "Coursera",
-      date: "Jan 2026",
-      href: "https://coursera.org/share/8ea7594e3c0d214499a00bcf1d17b5dc",
-    },
-    {
-      title: "Data Analysis with Python",
-      issuer: "Coursera",
-      date: "Jan 2026",
-      href: "https://coursera.org/share/bce77ac96c81a99bd72e39ee4ac597b0",
+      date: "Apr 2026",
+      href: "https://coursera.org/share/5fd533a5bfb0a513b480134b7d7cf75e",
     },
   ],
   education: [
@@ -217,28 +210,28 @@ export const portfolioData = {
 
 export const stats = [
   {
-    value: "4+",
-    label: "Flagship portfolio project concepts",
-    description: "Built to communicate range across AI, full-stack systems, and UX polish.",
+    value: "4",
+    label: "Featured GitHub projects",
+    description: "Selected from recent hands-on work in machine learning, NLP, and deep learning.",
   },
   {
-    value: "10+",
-    label: "Core tools across ML and web engineering",
-    description: "Comfortable moving between experimentation, data pipelines, and modern interfaces.",
+    value: "4",
+    label: "Machine learning focus areas",
+    description: "Regression, classification, NLP, and neural-network fundamentals.",
   },
   {
-    value: "Infinite",
-    label: "Curiosity for learning",
-    description: "The through-line behind every course, project, and late-night technical rabbit hole.",
+    value: "AI & ML",
+    label: "Degree specialisation",
+    description: "Computer Science and Engineering at Lovely Professional University.",
   },
 ];
 
 export const terminalLines = [
-  { command: "whoami", output: "Ritik Bhardwaj // AI & ML Student // Builder" },
+  { command: "whoami", output: "Ritik Bhardwaj // B.Tech CSE (AI & ML) Student" },
   {
     command: "focus --today",
-    output: "Machine learning systems, product UX, and recruiter-ready storytelling",
+    output: "Machine learning, NLP, deep learning, and problem solving",
   },
-  { command: "ls skills/", output: "python  cpp  tensorflow  scikit-learn  pandas  numpy" },
-  { command: "cat mission.txt", output: "Turn complex ideas into elegant, useful, intelligent products." },
+  { command: "ls skills/", output: "python  c++  scikit-learn  pandas  numpy  nlp" },
+  { command: "cat mission.txt", output: "Keep building strong foundations in AI and machine learning." },
 ];

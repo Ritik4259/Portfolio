@@ -10,7 +10,7 @@ function AboutSection({ about }) {
     <section id="about" className="section-shell">
       <SectionHeading
         eyebrow="About"
-        title="Engineering intelligence with curiosity, clarity, and product taste."
+        title="Learning AI and machine learning through practical projects."
         description={about.intro}
       />
       <div className="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
@@ -37,7 +37,7 @@ function AboutSection({ about }) {
               <p className="text-theme-muted text-xs uppercase tracking-[0.3em]">Profile Snapshot</p>
               <p className="text-theme mt-3 text-2xl font-semibold">AI & ML Student</p>
               <p className="text-theme-soft mt-2 text-sm leading-6">
-                Building ambitious projects with a clean visual language and a strong engineering core.
+                Exploring machine learning, NLP, and deep-learning foundations through hands-on work.
               </p>
             </div>
           </motion.div>
