@@ -7,8 +7,8 @@ function SkillsSection({ skillGroups }) {
     <section id="skills" className="section-shell">
       <SectionHeading
         eyebrow="Skills"
-        title="Tools I use to learn, build, and experiment."
-        description="A focused toolkit across programming, machine learning, and data work."
+        title="A practical toolkit across AI, software, and collaboration."
+        description="The languages, frameworks, tools, and working strengths listed in my latest CV."
       />
       <motion.div
         variants={sectionStagger}
@@ -24,25 +24,14 @@ function SkillsSection({ skillGroups }) {
             className="glass-panel border-theme panel-interactive rounded-[30px] p-6"
           >
             <h3 className="text-theme font-display text-2xl font-semibold">{group.title}</h3>
-            <div className="mt-6 space-y-5">
+            <div className="mt-6 flex flex-wrap gap-2.5">
               {group.items.map((skill) => (
-                <div key={skill.name}>
-                  <div className="mb-2 flex items-center justify-between">
-                    <span className="text-theme-soft text-sm font-medium">{skill.name}</span>
-                    <span className="text-theme-muted text-xs uppercase tracking-[0.2em]">
-                      {skill.level}%
-                    </span>
-                  </div>
-                  <div className="h-3 overflow-hidden rounded-full bg-white/5">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, ease: "easeOut" }}
-                      className="h-full rounded-full bg-gradient-to-r from-sky-400 via-cyan-300 to-emerald-300"
-                    />
-                  </div>
-                </div>
+                <span
+                  key={skill.name}
+                  className="surface-soft border-theme text-theme-soft rounded-full border px-3 py-2 text-sm"
+                >
+                  {skill.name}
+                </span>
               ))}
             </div>
           </motion.div>
