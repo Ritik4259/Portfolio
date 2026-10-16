@@ -81,8 +81,8 @@ function ProjectsSection({ projects }) {
     <section id="projects" className="section-shell">
       <SectionHeading
         eyebrow="Projects"
-        title="Recent GitHub projects in machine learning, NLP, and deep learning."
-        description="A selected set of four repositories that reflect my current learning and project work."
+        title="Recent GitHub projects across AI, machine learning, and developer tooling."
+        description="A selection of current repositories spanning machine learning, NLP, computer vision, MCP servers, and conversational AI."
       />
       <motion.div
         variants={sectionStagger}

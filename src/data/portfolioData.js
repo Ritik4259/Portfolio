@@ -114,6 +114,46 @@ export const portfolioData = {
       detail:
         "A repository showcasing an applied classification use case for identifying potentially fake social-media accounts from account-related data.",
     },
+    {
+      title: "Expense Tracker Local MCP Server",
+      description:
+        "A local Model Context Protocol server for managing personal expenses through Claude Desktop and SQLite.",
+      stack: ["Python", "FastMCP", "SQLite", "MCP"],
+      github: "https://github.com/Ritik4259/Expense-Tracker-Local-MCP-Server",
+      demo: "",
+      detail:
+        "Provides MCP tools for adding expenses, listing them by date range, summarising spending by category, and exposing expense categories as a resource while keeping data local.",
+    },
+    {
+      title: "Expense Tracker Remote MCP Server",
+      description:
+        "A Python MCP service that records, queries, and summarises expenses for local or hosted clients.",
+      stack: ["Python", "FastMCP", "SQLite", "HTTP"],
+      github: "https://github.com/Ritik4259/Expense-Tracker-Remote-MCP-Server",
+      demo: "https://funny-lime-muskox.fastmcp.app/mcp",
+      detail:
+        "Implements expense tools and category resources with a SQLite-backed service that can run locally or over HTTP for remote MCP clients.",
+    },
+    {
+      title: "VisionForgeAI",
+      description:
+        "An end-to-end deep-learning computer-vision system evolving toward an AI-powered visual-inspection pipeline.",
+      stack: ["Python", "Computer Vision", "Deep Learning", "Jupyter"],
+      github: "https://github.com/Ritik4259/VisionForge-AI",
+      demo: "",
+      detail:
+        "Explores a complete visual-inspection workflow spanning image preprocessing, detection, classification, segmentation, anomaly detection, explainability, severity assessment, and automated inspection reports.",
+    },
+    {
+      title: "Persistent LLM Chatbot",
+      description:
+        "A conversational AI application with persistent multi-threaded chats, streaming responses, and observability.",
+      stack: ["Python", "LangChain", "LangGraph", "Streamlit", "SQLite"],
+      github: "https://github.com/Ritik4259/LLM-Chatbot-with-Persistent-Conversations",
+      demo: "",
+      detail:
+        "Uses LangGraph SQLite checkpointing to resume conversation threads, streams model responses into a Streamlit UI, and integrates LangSmith for tracing, latency, and token monitoring.",
+    },
   ],
   timeline: [
     {
@@ -142,9 +182,9 @@ export const portfolioData = {
     },
   ],
   resume: {
-    href: "/Ritik%20Spec%20CV.pdf",
+    href: "/Latest%20spec%20cv.pdf",
     description:
-      "Download or preview my current CV.",
+      "Download or preview my latest CV.",
   },
   certificates: [
     {
@@ -210,9 +250,9 @@ export const portfolioData = {
 
 export const stats = [
   {
-    value: "4",
+    value: "8",
     label: "Featured GitHub projects",
-    description: "Selected from recent hands-on work in machine learning, NLP, and deep learning.",
+    description: "Selected from recent hands-on work in machine learning, NLP, deep learning, MCP, and LLM applications.",
   },
   {
     value: "4",
